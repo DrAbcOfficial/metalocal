@@ -39,7 +39,7 @@ jobs:
     - name: Zipping All
       uses: vimtor/action-zip@v1
       with:
-          files: metamod/metalocal/
+          files: metamod/metalocal/build/
           dest: metalocal-windows-x86.zip
 
     - name: Create Release
@@ -73,12 +73,12 @@ jobs:
 
     - name: Build
       working-directory: ${{env.SOLUTION_FILE_PATH}}
-      run: mkdir build && cd build && cmake .. && make && mv ../Release/libmetalocal.so ../Release/metalocal.so
+      run: mkdir build && cd build && cmake .. && make
 
     - name: Zipping All
       uses: vimtor/action-zip@v1
       with:
-          files: ${{env.SOLUTION_FILE_PATH}}/Release/metalocal.so
+          files: ${{env.SOLUTION_FILE_PATH}}/./build/
           dest: metalocal-ubuntu-i386.zip
 
     - name: Create Release
