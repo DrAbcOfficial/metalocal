@@ -140,6 +140,7 @@ C_DLLEXPORT int Meta_Attach(PLUG_LOADTIME /* now */,
 		LOG_ERROR(PLID, "can not fill server address!");
 		return FALSE;
 	}
+	InstallGameHooks();
 
 	return TRUE;
 }
@@ -150,6 +151,6 @@ C_DLLEXPORT int Meta_Attach(PLUG_LOADTIME /* now */,
 C_DLLEXPORT int Meta_Detach(PLUG_LOADTIME /* now */, 
 		PL_UNLOAD_REASON /* reason */) 
 {
-
+	UninstallGameHooks();
 	return TRUE;
 }
