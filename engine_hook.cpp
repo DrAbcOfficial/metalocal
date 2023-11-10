@@ -19,7 +19,6 @@ char* NewUTIL_VarArgs(char* care_1) {
 	return g_pfn_UTIL_VarArgs(local);
 }
 
-
 bool FindAddress() {
 	auto serverBase = gpMetaUtilFuncs->pfnGetGameDllBase();
 	auto serverHandle = gpMetaUtilFuncs->pfnGetGameDllHandle();

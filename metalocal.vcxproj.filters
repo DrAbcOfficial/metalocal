@@ -20,6 +20,9 @@
     <ClInclude Include="engine_hook.hpp">
       <Filter>Header</Filter>
     </ClInclude>
+    <ClInclude Include="lang.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="meta_api.cpp">
@@ -32,6 +35,9 @@
       <Filter>Souce</Filter>
     </ClCompile>
     <ClCompile Include="engine_hook.cpp">
+      <Filter>Souce</Filter>
+    </ClCompile>
+    <ClCompile Include="lang.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
   </ItemGroup>

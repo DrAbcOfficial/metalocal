@@ -139,12 +139,14 @@
   <ItemGroup>
     <ClInclude Include="engine_hook.hpp" />
     <ClInclude Include="info_name.hpp" />
+    <ClInclude Include="lang.hpp" />
     <ClInclude Include="signatures.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="engine_hook.cpp" />
     <ClCompile Include="h_export.cpp" />
+    <ClCompile Include="lang.cpp" />
     <ClCompile Include="meta_api.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
