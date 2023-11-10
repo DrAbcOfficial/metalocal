@@ -206,6 +206,6 @@ add_custom_command_if(
     TARGET ${PROJECT_NAME}
     POST_BUILD
     COMMANDS
-    COMMAND $<CONFIG:Release> copy "$<SHELL_PATH:${OUTPUT_DIRECTORY}>${TARGET_NAME}$ENV{TargetExt}" "$<SHELL_PATH:${CMAKE_CURRENT_SOURCE_DIR}/>/./build/addons/metamod/dlls/"
+    COMMAND $<CONFIG:Release> copy "$<SHELL_PATH:${OUTPUT_DIRECTORY}>${TARGET_NAME}$ENV{TargetExt}" "$<SHELL_PATH:${CMAKE_CURRENT_SOURCE_DIR}/>/build/addons/metamod/dlls/"
 )
 
