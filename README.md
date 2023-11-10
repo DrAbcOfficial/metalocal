@@ -10,7 +10,7 @@
 
 Using this plugin to change some hardcoded message from server.dll/so
 
-most of sven co-op's players is non-native English speakers, but sven co-op has successed blocking non-native English speakers from playing by hardcoding English into the library. This plugin modifies the strings hardcoded into the server-side library to enable different language servers.
+most of sven co-op's players is non-native English speakers, but sven co-op has successed bothering non-native English speakers from playing by hardcoding English into the library. This plugin modifies the strings hardcoded into the server-side library to enable different language servers.
 
 
 ---
