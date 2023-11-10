@@ -73,12 +73,12 @@ jobs:
 
     - name: Build
       working-directory: ${{env.SOLUTION_FILE_PATH}}
-      run: mkdir build && cd build && cmake .. && make
+      run: mkdir dlls && cd dlls && cmake .. && make
 
     - name: Zipping All
       uses: vimtor/action-zip@v1
       with:
-          files: ${{env.SOLUTION_FILE_PATH}}/./build/
+          files: ${{env.SOLUTION_FILE_PATH}}/build/
           dest: metalocal-ubuntu-i386.zip
 
     - name: Create Release
