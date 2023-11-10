@@ -4,9 +4,9 @@
 
 class CLangItem {
 public:
-	CLangItem(char* name, const char* filepath);
-	std::u8string Get(char* token);
-	void Set(char* token, char* value);
+	CLangItem(const char* name, const char* filepath);
+	std::u8string Get(const char* token);
+	void Set(const char* token, const char* value);
 private:
 	std::string m_szName;
 	std::unordered_map<std::string, std::u8string> m_dicDatabase;
@@ -14,8 +14,8 @@ private:
 
 class CLang {
 public:
-	void Add(char* name, const char* filepath);
-	CLangItem* GetItem(char* name);
+	void Add(const char* name, const char* filepath);
+	CLangItem* GetItem(const char* name);
 private:
 	std::unordered_map<std::string, CLangItem*> m_dicLangs;
 };

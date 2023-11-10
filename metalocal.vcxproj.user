@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerCommand>svends.exe</LocalDebuggerCommand>
-    <LocalDebuggerCommandArguments>-console +map crossfire +developer 1</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-console +map crossfire +developer 1 -lang cn</LocalDebuggerCommandArguments>
     <LocalDebuggerWorkingDirectory>G:\SteamLibrary\steamapps\common\Sven Co-op\</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>

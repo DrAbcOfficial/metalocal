@@ -141,6 +141,7 @@ C_DLLEXPORT int Meta_Attach(PLUG_LOADTIME /* now */,
 		return FALSE;
 	}
 	InstallGameHooks();
+	ReadLang();
 
 	return TRUE;
 }
