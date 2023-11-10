@@ -106,3 +106,7 @@ or want to add new hooks yourself, you can follow these steps to configure your 
 	Now you can grab your new library (asexthook.dll/asexthook.so) in 
 	
 	`dll/addons/metamod/dlls/`
+
+## Credit
+
+This plugin used mINI by pulzed from [Here](https://github.com/pulzed/mINI)
