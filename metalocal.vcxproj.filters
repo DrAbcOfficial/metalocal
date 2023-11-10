@@ -11,36 +11,36 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="info_name.hpp">
+    <ClInclude Include="src\header\engine_hook.hpp">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="signatures.hpp">
+    <ClInclude Include="src\header\info_name.hpp">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="engine_hook.hpp">
+    <ClInclude Include="src\header\lang.hpp">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="lang.hpp">
+    <ClInclude Include="src\header\mini.hpp">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="mini.hpp">
+    <ClInclude Include="src\header\signatures.hpp">
       <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="meta_api.cpp">
+    <ClCompile Include="src\source\dllmain.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
-    <ClCompile Include="dllmain.cpp">
+    <ClCompile Include="src\source\engine_hook.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
-    <ClCompile Include="h_export.cpp">
+    <ClCompile Include="src\source\h_export.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
-    <ClCompile Include="engine_hook.cpp">
+    <ClCompile Include="src\source\lang.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
-    <ClCompile Include="lang.cpp">
+    <ClCompile Include="src\source\meta_api.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
   </ItemGroup>

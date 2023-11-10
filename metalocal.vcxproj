@@ -18,6 +18,20 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\header\engine_hook.hpp" />
+    <ClInclude Include="src\header\info_name.hpp" />
+    <ClInclude Include="src\header\lang.hpp" />
+    <ClInclude Include="src\header\mini.hpp" />
+    <ClInclude Include="src\header\signatures.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\source\dllmain.cpp" />
+    <ClCompile Include="src\source\engine_hook.cpp" />
+    <ClCompile Include="src\source\h_export.cpp" />
+    <ClCompile Include="src\source\lang.cpp" />
+    <ClCompile Include="src\source\meta_api.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -136,20 +150,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="engine_hook.hpp" />
-    <ClInclude Include="info_name.hpp" />
-    <ClInclude Include="lang.hpp" />
-    <ClInclude Include="mini.hpp" />
-    <ClInclude Include="signatures.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="engine_hook.cpp" />
-    <ClCompile Include="h_export.cpp" />
-    <ClCompile Include="lang.cpp" />
-    <ClCompile Include="meta_api.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
