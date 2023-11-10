@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Souce">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="enginedef.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="info_name.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="serverdef.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="signatures.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="meta_api.cpp">
+      <Filter>Souce</Filter>
+    </ClCompile>
+    <ClCompile Include="dllapi.cpp">
+      <Filter>Souce</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Souce</Filter>
+    </ClCompile>
+    <ClCompile Include="engine_api.cpp">
+      <Filter>Souce</Filter>
+    </ClCompile>
+    <ClCompile Include="h_export.cpp">
+      <Filter>Souce</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
