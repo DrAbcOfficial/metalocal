@@ -69,7 +69,7 @@ plugin_info_t Plugin_info = {
 	"0.0",	// version
 	"2023",	// date
 	"Dr.Abc",	// author
-	"https://github.com/DrAbcOfficial/metamod-asjieba",	// url
+	"https://github.com/DrAbcOfficial/metalocal",	// url
 	"METALOCAL",	// logtag, all caps please
 	PT_ANYTIME,	// (when) loadable
 	PT_STARTUP,	// (when) unloadable
