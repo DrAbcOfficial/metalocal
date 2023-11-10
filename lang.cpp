@@ -1,3 +1,4 @@
+#include "mini.hpp"
 #include "lang.hpp"
 
 void CLang::Add(char* name, const char* filepath){
