@@ -94,7 +94,6 @@ set(no_group_source_files
     "src/header/lang.hpp"
     "src/header/mini.hpp"
     "src/header/signatures.hpp"
-    "src/source/dllmain.cpp"
     "src/source/engine_hook.cpp"
     "src/source/h_export.cpp"
     "src/source/lang.cpp"
