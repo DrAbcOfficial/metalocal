@@ -1,0 +1,7 @@
+#temporary files
+*~
+.vs
+cppjieba
+asjieba.vcxproj.user
+/Debug
+/Release
