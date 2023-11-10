@@ -44,17 +44,19 @@
 
 #include "sdk_util.h"		// UTIL_LogPrintf, etc
 
+#include "engine_hook.hpp"
+
 mBOOL dlclose_handle_invalid;
 
 // Must provide at least one of these..
 static META_FUNCTIONS gMetaFunctionTable = {
 	NULL,			// pfnGetEntityAPI				HL SDK; called before game DLL
 	NULL,			// pfnGetEntityAPI_Post			META; called after game DLL
-	GetEntityAPI2,	// pfnGetEntityAPI2				HL SDK2; called before game DLL
+	NULL,	// pfnGetEntityAPI2				HL SDK2; called before game DLL
 	NULL,			// pfnGetEntityAPI2_Post		META; called after game DLL
 	NULL,			// pfnGetNewDLLFunctions		HL SDK2; called before game DLL
 	NULL,			// pfnGetNewDLLFunctions_Post	META; called after game DLL
-	GetEngineFunctions,	// pfnGetEngineFunctions	META; called before HL engine
+	NULL,	// pfnGetEngineFunctions	META; called before HL engine
 	NULL,			// pfnGetEngineFunctions_Post	META; called after HL engine
 	NULL,			// pfnGetStudioBlendingInterface 2022/07/02 Added by hzqst
 	NULL,			// pfnGetStudioBlendingInterface_Post 2022/07/02 Added by hzqst
@@ -130,6 +132,12 @@ C_DLLEXPORT int Meta_Attach(PLUG_LOADTIME /* now */,
 	if (!engineBase)
 	{
 		LOG_ERROR(PLID, "engine base not found!");
+		return FALSE;
+	}
+
+	if (!FindAddress())
+	{
+		LOG_ERROR(PLID, "can not fill server address!");
 		return FALSE;
 	}
 

@@ -11,16 +11,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="enginedef.hpp">
-      <Filter>Header</Filter>
-    </ClInclude>
     <ClInclude Include="info_name.hpp">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="serverdef.hpp">
+    <ClInclude Include="signatures.hpp">
       <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="signatures.hpp">
+    <ClInclude Include="engine_hook.hpp">
       <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
@@ -28,16 +25,13 @@
     <ClCompile Include="meta_api.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
-    <ClCompile Include="dllapi.cpp">
-      <Filter>Souce</Filter>
-    </ClCompile>
     <ClCompile Include="dllmain.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
-    <ClCompile Include="engine_api.cpp">
+    <ClCompile Include="h_export.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
-    <ClCompile Include="h_export.cpp">
+    <ClCompile Include="engine_hook.cpp">
       <Filter>Souce</Filter>
     </ClCompile>
   </ItemGroup>

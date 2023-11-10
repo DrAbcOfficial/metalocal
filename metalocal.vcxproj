@@ -137,15 +137,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="enginedef.hpp" />
+    <ClInclude Include="engine_hook.hpp" />
     <ClInclude Include="info_name.hpp" />
-    <ClInclude Include="serverdef.hpp" />
     <ClInclude Include="signatures.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllapi.cpp" />
     <ClCompile Include="dllmain.cpp" />
-    <ClCompile Include="engine_api.cpp" />
+    <ClCompile Include="engine_hook.cpp" />
     <ClCompile Include="h_export.cpp" />
     <ClCompile Include="meta_api.cpp" />
   </ItemGroup>
